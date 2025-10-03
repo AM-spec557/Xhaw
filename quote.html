@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="six-week.html">Courses</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+ <!-- Quote Section -->
+  <section class="quote-section">
+    <h2>Quote Form and Fee Calculator</h2>
+
+    <div class="quote-flex">
+      <!-- Quote Form -->
+      <form class="quote-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Value">
+
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" placeholder="Value">
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Value">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Value">
+
+        <label>Courses Selected</label>
+        <div class="courses-list">
+          <label><input type="checkbox" value="750"> Child Minding</label>
+          <label><input type="checkbox" value="750"> Cooking</label>
+          <label><input type="checkbox" value="750"> Garden Maintenance</label>
+          <label><input type="checkbox" value="1500"> First Aid</label>
+          <label><input type="checkbox" value="1500"> Sewing</label>
+          <label><input type="checkbox" value="1500"> Life Skills</label>
+          <label><input type="checkbox" value="1500"> Landscaping</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Calculator + Discount -->
+      <div class="calculator-section">
+        <div class="calculator">
+          <input type="text" id="calc-display" readonly>
+          <div class="calc-buttons">
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button onclick="clearDisplay()">C</button>
+
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button onclick="appendOperator('+')">+</button>
+
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button onclick="appendOperator('-')">-</button>
+
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendOperator('*')">×</button>
+            <button onclick="appendOperator('/')">÷</button>
+            <button onclick="calculateResult()">=</button>
+          </div>
+        </div>
+
+        <aside class="discount-box" id="discountBox">
+          <h3>Discount Information</h3>
+          <ul>
+            <li>Two Courses – <strong>5% off</strong></li>
+            <li>Three Courses – <strong>10% off</strong></li>
+            <li>More than Three – <strong>15% off</strong></li>
+          </ul>
+          <button class="dismiss-btn" onclick="dismissDiscount()">Dismiss</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Empowering The Nation | 0842356781 | etn@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

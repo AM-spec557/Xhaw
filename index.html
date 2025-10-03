@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering The Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="six-week.html">Courses</a>
+      <img src="img/socialsight-image-4ee7672d-a4e2-4ec0-b886-89a49cc85b1a.png" alt="Empowering The Nation Logo" class="logo">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="img/IMG_3309.jpg" alt="Plant in hand">
+    </div>
+    <div class="hero-text">
+      <h2>Empowering The Nation - Skills for a Brighter Future</h2>
+      <p>
+        Established in 2022, Empowering the Nation is dedicated to providing professional, structured training
+        programmes for domestic workers and gardeners in Johannesburg. Our six-week short courses and 12-week
+        learnerships are designed to enhance employability, raise earning potential, and equip individuals with
+        practical skills that meet today’s household and business needs.
+      </p>
+      <p>
+        By investing in skills development, we empower workers to secure better-paying opportunities and help
+        employers access a skilled, reliable workforce. Participants gain confidence to deliver high-quality
+        services or launch their own small businesses, contributing to economic growth in their communities.
+      </p>
+      <a href="about.html" class="btn">Learn More About Us</a>
+    </div>
+  </section>
+
+  <!-- Courses + Calculator Section -->
+  <section class="courses-section">
+    <!-- Six-Week Courses -->
+    <div class="course-box">
+      <h3>Six-Week Courses</h3>
+      <ul>
+        <li>Child Minding: R750</li>
+        <li>Cooking: R750</li>
+        <li>Gardening: R750</li>
+      </ul>
+      <button onclick="location.href='six-week.html'">View</button>
+    </div>
+
+    <!-- Calculator -->
+    <div class="calculator">
+      <input type="text" id="calc-display" readonly>
+      <div class="calc-buttons">
+       <button onclick="appendNumber(7)">7</button>
+        <button onclick="appendNumber(8)">8</button>
+        <button onclick="appendNumber(9)">9</button>
+        <button onclick="clearDisplay()">C</button>
+
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendOperator('+')">+</button>
+
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendOperator('-')">-</button>
+
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="appendOperator('*')">×</button>
+        <button onclick="appendOperator('/')">÷</button>
+        <button onclick="calculateResult()">=</button>
+      </div>
+      <button class="quote-btn" onclick="getQuote()">Get Quote!</button>
+    </div>
+
+    <!-- Six-Month Courses -->
+    <div class="course-box">
+      <h3>Six-Month Courses</h3>
+      <ul>
+        <li>First Aid: R1500</li>
+        <li>Sewing: R1500</li>
+        <li>Landscaping: R1500</li>
+        <li>Life Skills: R1500</li>
+      </ul>
+      <button onclick="location.href='six-month.html'">View</button>
+    </div>
+  </section>
+
+  <!-- Discount Box -->
+  <aside class="discount-box" id="discountBox">
+    <h3>Discount Information</h3>
+    <ul>
+      <li>Two Courses – <strong>5% off</strong></li>
+      <li>Three Courses – <strong>10% off</strong></li>
+      <li>More than Three – <strong>15% off</strong></li>
+    </ul>
+    <button class="dismiss-btn" onclick="dismissDiscount()">Dismiss</button>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-info">
+      <img src="img/IMG_3301.jpg" alt="Mini Logo" width="70" height="50">
+      <p>084 235 6781 | EmpowerSA | etn@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
